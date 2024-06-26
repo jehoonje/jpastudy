@@ -80,7 +80,7 @@ class ProductRepositoryTest {
         productRepository.deleteById(id);
         //then
         Product foundProduct = productRepository.findById(id)
-                .orElse(null);
+                                                .orElse(null);
 
         assertNull(foundProduct);
 

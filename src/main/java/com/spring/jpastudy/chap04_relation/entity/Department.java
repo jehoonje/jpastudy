@@ -47,6 +47,7 @@ public class Department {
      */
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, orphanRemoval = true,
             cascade = {CascadeType.PERSIST, CascadeType.REMOVE})
+    @Builder.Default
     private List<Employee> employees = new ArrayList<>();
 
     public void removeEmployee(Employee employee) {

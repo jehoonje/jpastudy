@@ -27,6 +27,7 @@ public class Goods {
     private String name;
 
     @OneToMany(mappedBy = "goods", orphanRemoval = true, cascade = CascadeType.ALL)
+    @Builder.Default
     private List<Purchase> purchaseList = new ArrayList<>();
 
 }

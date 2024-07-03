@@ -4,7 +4,7 @@ server:
 # database setting
 spring:
   datasource:
-    url: jdbc:mariadb://localhost:3306/jpastudy
+    url: jdbc:mariadb://localhost:3306/jpa
     username: root
     password: mariadb
     driver-class-name: org.mariadb.jdbc.Driver
@@ -13,7 +13,7 @@ spring:
     database-platform: org.hibernate.dialect.MariaDB106Dialect
     hibernate:
       # ddl ??? ??? ????...
-      ddl-auto: create
+      ddl-auto: update
     properties:
       hibernate:
         format_sql: true # SQL ?? ??? ??? ??

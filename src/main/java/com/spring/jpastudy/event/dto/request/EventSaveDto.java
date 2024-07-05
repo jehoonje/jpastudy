@@ -5,8 +5,6 @@ import com.spring.jpastudy.event.entity.Event;
 import lombok.*;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 @Getter @Setter @ToString
 @EqualsAndHashCode
